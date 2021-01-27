@@ -1,0 +1,23 @@
+<%- include("header") -%>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="box" id="heading">
+            <h1 > <%= listTitle %></h1>
+        </div>
+        <div class="box">
+            <% for(let i=0; i<newListItem.length; i++){%>
+            <div class="item">
+               <input type="checkbox">
+                    <p ><%= newListItem[i] %></p>
+                   
+            </div>
+            <%}%>
+            <form class="item" action="/" method="POST">
+                <input type="text" name="newItem" autocomplete="off" placeholder="Ide írd be az új teendőt" required autofocus>
+                <button type="submit" name="list" value=<%= listTitle %>>+</button>
+            </form>
+        </div>   
+       
+        <%- include("footer") -%> 
+        

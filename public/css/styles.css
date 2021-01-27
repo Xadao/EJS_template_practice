@@ -1,0 +1,109 @@
+html {
+  /* background-color: #E4E9FD; */
+  background-image: -webkit-linear-gradient(45deg, #393e46 15%, #00adb5 90%);
+   min-height: 100%; 
+  background-repeat: no-repeat;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #fff;
+  padding: 0.7rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box {
+  max-width: 25rem;
+  margin: 3rem auto;
+  background: white;
+  border-radius: 0.3rem;
+  box-shadow: 0.3rem 0.3rem 1rem -0.3rem rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #393e46;
+  text-align: center;
+}
+
+.item {
+  min-height: 4.2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #393e46;
+}
+
+input[type="checkbox"] {
+  margin: 1.3rem;
+}
+
+p {
+  margin: 0;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+  margin-left: 1.3rem;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #393e46;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 0;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 3rem;
+  top: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: 200;
+  width: 20rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #393e46;
+}
+
+::placeholder {
+  color: #eeeeee;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+
+
+button:hover {
+  background: #00ADB5;
+  border: solid #00ADB5 1px;
+  -webkit-border-radius: 80%;
+  -moz-border-radius: 80%;
+  border-radius: 80%;
+  text-decoration: none;
+}
